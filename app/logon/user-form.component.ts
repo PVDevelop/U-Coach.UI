@@ -13,7 +13,6 @@ export class UserFormComponent
     user = new User("some login", "some password");
     
     constructor(private userService: UserService){
-        console.log("UserFormComponent created");
     }
     
     onSubmit(){

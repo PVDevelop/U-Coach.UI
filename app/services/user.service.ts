@@ -9,18 +9,12 @@ export class UserService{
     }
     
     logon(user: User){
-        
-        let tempValues2 = 
-            this.http.get("http://localhost:10406/api/values").
-            map(res=>res.json() || { });
+        // let userJson = JSON.stringify(user);
+        // this.http.post('http://localhost:7891/api/users', userJson, null);
+        let users = 
+            this.http.get('http://localhost:7891/api/users', null).
+            map(res=>res);
             
-            
-        alert(tempValues2);
-        
-        // let users = 
-        //     this.http.get('http://localhost:7891/api/users', null).
-        //     map(res=>res);
-            
-        // alert(users);
+        alert(users);
     }
 }

@@ -9,14 +9,9 @@
         "removeComments": false,
         "noImplicitAny": false
     },
-    "files": [
-        "app/bootstraper/bootstraper.component.ts",
-        "app/app/app.component.ts",
-        "app/services/user.service.ts"
+    "exclude": [
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts"
     ]
-    // "exclude": [
-    //     "node_modules",
-    //     "typings/main",
-    //     "typings/main.d.ts"
-    // ]
 }

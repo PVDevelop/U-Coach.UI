@@ -1,4 +1,0 @@
-1. Запустить web-сервер: http-server
-2. Запустить chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222
-3. Приаттачиться отладчиком
-4. Открыть сайт: localhost:8080
