@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
 import {NgForm} from 'angular2/common';
-import {User} from '../classes/user';
+import {Logon} from '../classes/logon/logon';
 import {UserService} from '../services/user.service';
 
 @Component({
@@ -10,12 +10,12 @@ import {UserService} from '../services/user.service';
 })
 export class UserFormComponent
 {
-    user = new User("some login", "some password");
+    logon = new Logon("some login", "some password");
     
     constructor(private userService: UserService){
     }
     
     onSubmit(){
-        this.userService.logon(this.user);
+        this.userService.logon(this.logon);
     }
 }
