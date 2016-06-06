@@ -10,7 +10,9 @@
         "noImplicitAny": false,
         "outDir": "bin"
     },
-    "files": [
-        "app/account/account.component.ts"
+    "exclude": [
+            "node_modules",
+            "typings/main",
+            "typings/main.d.ts"
     ]
 }
