@@ -5,7 +5,7 @@ import {UserFormComponent} from '../logon/user-form.component';
 
 @Component({
     selector: 'app',
-    templateUrl: 'app/app/app.component.html',
+    templateUrl: './src/app/app.component.html',
     directives: [ROUTER_DIRECTIVES]
 })
 @Routes([
