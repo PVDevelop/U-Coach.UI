@@ -26,18 +26,5 @@ export class UserService{
             null, 
             err => console.error("Error on post auth: " + err),
             () => console.log("Auth complete"));
-            
-        // this.http.post('http://localhost:7788/api/auth').
-        // map(this.mapUsers).
-        // subscribe(
-        //     data => console.log('data: ' + data),
-        //     err => console.error(err),
-        //     () => console.log('done')
-        // );
-    }
-    
-    private mapUsers(resp: Response){
-        var body = resp.json();
-        return body.data;
     }
 }
