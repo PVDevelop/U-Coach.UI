@@ -3,5 +3,6 @@ app/**/*.js.map
 node_modules/**
 typings/**
 bin/**
-npm-debug.log
-dist/**
+*.log
+*.log.*
+deploy/**

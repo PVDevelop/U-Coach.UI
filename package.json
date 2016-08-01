@@ -2,15 +2,18 @@
   "name": "angular.test",
   "version": "1.0.0",
   "scripts": {
+    "typings": "typings",
+    "postinstall": "typings install",
+
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
-    "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings",
 
-    "clean": "del dist\\* /s /q",
-    "build": "npm run clean && tsc"
+    "tsc:deploy" : "tsc --project tsconfig_deploy.json",
+    "clean": "IF EXIST deploy DEL /s /q deploy\\*",
+    "minify": "uglifyjs deploy/bundle.js --screw-ie8 --compress --mangle --output deploy/bundle.min.js",
+    "build": "npm run clean && npm run tsc:deploy && browserify -s main deploy/main.js > deploy/bundle.js && npm run minify"
   },
   "license": "ISC",
   "dependencies": {

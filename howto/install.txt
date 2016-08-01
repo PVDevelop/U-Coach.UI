@@ -1,4 +1,5 @@
-1. Установать npm
-2. Установить typrscript
-3. Установить npm install -g browserify
-4. Из папки проекта вызвать npm install
+- Установать npm
+- Установить typrscript
+- Установить npm install -g browserify
+- Установить npm install -g uglifyjs
+- Из папки проекта вызвать npm install
