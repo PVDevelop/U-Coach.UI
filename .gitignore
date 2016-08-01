@@ -4,3 +4,4 @@ node_modules/**
 typings/**
 bin/**
 npm-debug.log
+dist/**
