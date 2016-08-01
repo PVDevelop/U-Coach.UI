@@ -10,7 +10,7 @@ import {UserService} from '../services/user.service';
 })
 export class UserFormComponent
 {
-    logon = new Logon("some login", "some password");
+    logon = new Logon("", "");
     
     constructor(private userService: UserService){
     }
