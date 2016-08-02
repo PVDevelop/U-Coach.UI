@@ -11,6 +11,10 @@
             <input type="text" class="form-control" required [(ngModel)] = "logon.password"/>
         </div>
         
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Logon</button>
+    </form>
+
+    <form (ngSubmit)="onFbSubmit()" >
+        <button type="submit">Facebook</button>
     </form>
 </div>

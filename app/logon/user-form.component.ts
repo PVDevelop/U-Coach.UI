@@ -18,4 +18,8 @@ export class UserFormComponent
     onSubmit(){
         this.userService.logon(this.logon);
     }
+
+    onFbSubmit(){
+        this.userService.logonFb();
+    }
 }

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {ROUTER_DIRECTIVES, Routes} from '@angular/router';
-import {AccountComponent} from '../account/account.component';
 import {UserFormComponent} from '../logon/user-form.component';
+import {FbComponent} from '../facebook/fb.Component';
 
 @Component({
     selector: 'app',
@@ -10,6 +10,6 @@ import {UserFormComponent} from '../logon/user-form.component';
 })
 @Routes([
     {path: '/logon', component: UserFormComponent},
-    {path: '/account', component: AccountComponent}
+    {path: '/logon_fb/:code', component: FbComponent}
 ])
 export class AppComponent{}
